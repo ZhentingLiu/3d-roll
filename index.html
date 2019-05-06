@@ -3,8 +3,9 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Title</title>
-		<style>
+		<title>3d</title>
+	</head>
+<style>
 			* {
 				margin: 0;
 				padding: 0;
@@ -43,7 +44,7 @@
 				top: 0;
 				width: 100%;
 				height: 100%;
-				background: url("images/a1.png") no-repeat;
+				background: url("./images/a1.png") no-repeat;
 				
 			}
 			/*拼接立体容器*/
@@ -51,14 +52,14 @@
 			/*2.立体容器每一个面的图片正面朝外*/
 			
 			.box .imageBox li span:nth-child(1) {
-				background-image: url("images/a1.png");
+				background-image: url("./images/a1.png");
 				/* background-size: cover; */
 				transform: translateZ(0);
 			}
 			
 			.box .imageBox li span:nth-child(2) {
 				/* background-size: cover; */
-				background-image: url("images/a2.png");
+				background-image: url("./images/a2.png");
 				/*旋转过后轴也会旋转*/
 				transform: rotateX(90deg) translateZ(22px);
 				/* transform: rotateZ(90deg) translateX(428px); */
@@ -66,13 +67,13 @@
 			
 			.box .imageBox li span:nth-child(3) {
 				/* background-size: cover; */
-				background-image: url("images/a3.png");
+				background-image: url("./images/a3.png");
 				transform: rotateX(180deg) translateZ(22px);
 			}
 			
 			.box .imageBox li span:nth-child(4) {
 				/* background-size: cover; */
-				background-image: url("images/a4.png");
+				background-image: url("./images/a4.png");
 				transform: rotateX(270deg) translateZ(22px);
 			}
 			
@@ -121,8 +122,6 @@
 				right: 0;
 			}
 		</style>
-	</head>
-
 	<body>
 		<div class="box">
 			<ul class="imageBox">
@@ -162,7 +161,7 @@
 			<a class="left arr" href="javascript:;">&lt;</a>
 			<a class="right arr" href="javascript:;">&gt;</a>
 		</div>
-		<script src="jquery.min.js"></script>
+		<script src="./jquery.min.js"></script>
 		<script>
 			$( function () {
 				var index = 0;
